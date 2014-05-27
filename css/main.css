@@ -1,0 +1,97 @@
+.page-header {
+    padding-bottom: 0;
+    margin: 0;
+    border-bottom: 0;
+}
+.page-header .navbar-nav{ float: right;}
+.page-header>div>div, .page-header>div>ul {
+    display:inline-block;
+}
+.text-edit{
+    padding: 13px 0 0 0;
+}
+.account {
+    text-align:right;
+}
+.account>div , .account>ul {
+    text-align:left;
+}
+
+.navbar{
+    margin-bottom: 0;
+}
+
+.navbar .nav>li>a.brand {
+    padding-left:20px;
+    margin-left:0
+}
+
+a.navbar-brand {
+    font-size: 47px;
+    line-height: 30px;
+    font-family: Arizonia;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 15px;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #18bc9c;
+    background-color: #2c3e50;
+    text-decoration-line: underline;
+}
+
+
+.navbar-form {
+    margin-left: 20px;
+}
+
+body {
+    background-image: url("../img/backgrounds/congruent_outline.png");
+}
+
+body > section.content {
+    /*width:100vw;*/  /*  commented this out because of the weird shift in the footer content */
+    margin-top: 75px;
+}
+
+body > section.content > section.container{
+    background-color: white;
+    margin: 0, 200px, 0, 200px;
+}
+
+
+/* Contact Form */
+
+#contact {
+    margin: 40px 0 25px 0;
+}
+
+/* End Contact Form */
+
+
+
+/* start footer overrides */
+.footer-divide {
+    background: url("../img/backgrounds/header-bg.png") repeat-x left bottom white;
+    height: 25px;
+    padding: 0;
+}
+
+
+.footer-no-padding {
+    padding: 0 !important;
+    margin: auto !important;
+    background-color: #eaeaea !important;
+    height: 100px !important;
+}
+
+footer {
+    align-content: center;
+    text-align: center;
+    margin-top: 5px;
+}
+
+
