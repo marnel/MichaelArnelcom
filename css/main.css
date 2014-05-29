@@ -71,6 +71,54 @@ body > section.content > section.container{
 
 /* End Contact Form */
 
+section > .resume {
+    margin: 40px 150px 0 150px;
+}
+
+.resumeMonoGram {
+    height: 100px;
+    border-radius: 75px;
+    -webkit-border-radius: 75px;
+    -moz-border-radius: 75px;
+    width: 100px;
+    float: left;
+    margin: 0 20px 0 0;
+    background-color: #2c3e50;
+}
+
+.resumeMonoGram > p {
+    color: #ffffff;
+    font-size: 55px;
+    font-weight: bold;
+    font-family: 'Lora',cursive;
+    margin: 5px 0 0 5px;
+}
+
+section.resume > div > h1 {
+    font-weight: bolder !important;
+    font-size: 50px;
+}
+
+section.resume > div > h4 {
+    margin-top: -10px !important;
+    color: #737475;
+    font-weight: bold;
+}
+
+.resumeSectionHeader {
+    font-size: 20px;
+    font-weight:bold;
+}
+
+.resumeSectionTitle {
+    font-weight:normal;
+    text-align: left;
+    color:#898989;
+}
+
+div.panel-body.skills > div.col-md-3 {
+    padding-left: 0 !important;
+}
 
 
 /* start footer overrides */
