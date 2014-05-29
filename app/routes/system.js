@@ -5,7 +5,7 @@ angular.module('myApp').config(['$stateProvider', '$urlRouterProvider',
         function($stateProvider, $urlRouterProvider) {
 
             // For unmatched routes:
-            $urlRouterProvider.otherwise('/');
+            $urlRouterProvider.otherwise('/blog/list');
 
             // states for my app
             $stateProvider              
