@@ -13,7 +13,7 @@
           <ul class="list-group">
             <li class="list-group-item" data-ng-repeat="category in categories">
               <span class="badge">{[{ category.length }]}</span>
-              <a data-ng-click="setCatFilter(category.name)">{[{category.name}]}</a>
+              <a class="text-primary" data-ng-click="setCatFilter(category.name)">{[{category.name}]}</a>
             </li>
           </ul>
         </div>
@@ -26,7 +26,7 @@
           <ul class="list-group">
             <li class="list-group-item" data-ng-repeat="tag in tags">
               <span class="badge">{[{ tag.length }]}</span>
-              <a data-ng-click="setTagFilter(tag.name)">{[{tag.name}]}</a>
+              <a class="text-primary" data-ng-click="setTagFilter(tag.name)">{[{tag.name}]}</a>
             </li>
           </ul>
         </div>

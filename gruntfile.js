@@ -102,26 +102,40 @@ module.exports = function(grunt){
                     expand: true,
                     cwd: "app/views",
                     src: ["*.html"],
-                    dest: "build/app/views/"
+                    dest: "../MichaelArnelStatic/public/app/views/"
                 },
                     {
                         expand: true,
                         cwd: "app/controllers",
                         src: ["*.js"],
-                        dest: "build/app/controllers/"
+                        dest: "../MichaelArnelStatic/public/app/controllers/"
                     },
                     {
                         expand: true,
                         cwd: "app/routes",
                         src: ["*.js"],
-                        dest: "build/app/routes/"
+                        dest: "../MichaelArnelStatic/public/app/routes/"
                     },
                     {
                         expand: true,
                         cwd: "app/",
-                        src: ["system.js"],
-                        dest: "build/app/"
+                        src: ["*.js"],
+                        dest: "../MichaelArnelStatic/public/app/"
+                    },
+                    {
+                        expand: true,
+                        cwd: "css/",
+                        src: ["*.css"],
+                        dest: "../MichaelArnelStatic/public/css/"
                     }]
+            },
+            prod2: {
+                files: {
+                    src: ["public/*"],
+                    flatten: true,
+                    dest: "../MichaelArnelStatic/public",
+                    expand: true
+                }
             }
         }
     });
@@ -135,6 +149,6 @@ module.exports = function(grunt){
 
 
     grunt.registerTask("dev", ["shell:clean", "shell:generate", "copy:dev", "shell:server"]);
-    grunt.registerTask("dist", ["clean", "copy:prod"]);
+    grunt.registerTask("dist", ["shell:clean", "shell:generate", "copy:prod2"]);
     grunt.registerTask("default", ["dev"]);
 };
